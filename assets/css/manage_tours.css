@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 28px;
+  color: #00ffe1;
+}
+
+/* Form Styling */
+form {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  background: rgba(255, 255, 255, 0.3);
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+form button {
+  background: #00ffd5;
+  color: #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: #00c9b3;
+  transform: scale(1.03);
+}
+
+form a {
+  color: #ff6666;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+form a:hover {
+  text-decoration: underline;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 20px;
+  background: #ffffff20;
+  color: #00fff7;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.back-btn:hover {
+  background: #00fff720;
+  box-shadow: 0 0 10px #00fff7;
+}
+
+/* Table Styling */
+table {
+  width: 95%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  animation: fadeInUp 1s ease;
+}
+
+th, td {
+  padding: 14px 20px;
+  text-align: left;
+  color: #fff;
+}
+
+th {
+  background: rgba(0, 255, 200, 0.2);
+  color: #00ffe1;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+tr:hover {
+  background-color: rgba(0, 255, 255, 0.08);
+  transition: background 0.3s ease;
+}
+
+/* Action Buttons */
+.actions a {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #00ffcc;
+}
+
+.edit-btn:hover {
+  background-color: #00e6b8;
+  transform: scale(1.05);
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+}
+
+.delete-btn:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+
+  table, th, td {
+    font-size: 14px;
+  }
+
+  .actions a {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+
+/*nav abars*/
+.back-next-btn {
+  position: fixed;
+  z-index: 9999;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(0, 123, 255, 0.1); /* transparent background */
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.back-next-btn:hover {
+  background: rgba(73, 191, 30, 0.6);
+  color: #fff;
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.back-btn {
+  top: 20px;
+  left: 20px;
+}
+
+.next-btn {
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-next-btn i {
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.back-next-btn:hover i {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .back-next-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,131 @@
+.about-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-hero {
+    text-align: center;
+         background: 
+   linear-gradient(rgba(180, 229, 96, 0.4), rgba(0, 0, 0, 0.4)), 
+   url('../images/nature.jpeg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.about-hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-text {
+    flex: 1 1 60%;
+}
+
+.about-text h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.about-text p, .about-text ul {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.about-text ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-text ul li {
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.about-text ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4e8cff;
+    font-weight: bold;
+}
+
+.about-image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/*nav abars*/
+.back-next-btn {
+  position: fixed;
+  z-index: 9999;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(0, 123, 255, 0.1); /* transparent background */
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.back-next-btn:hover {
+  background: rgba(73, 191, 30, 0.6);
+  color: #fff;
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.back-btn {
+  top: 20px;
+  left: 20px;
+}
+
+.next-btn {
+  bottom: 20px;
+  right: 20px;
+}
+
+.back-next-btn i {
+  margin: 0 8px;
+  transition: transform 0.3s;
+}
+
+.back-next-btn:hover i {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .back-next-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}
