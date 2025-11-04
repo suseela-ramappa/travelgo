@@ -23,9 +23,9 @@ A responsive travel booking website developed using **PHP**, **MySQL**, **HTML**
 [View Live Project](https://suseela-portafolio.vercel.app/)  
 [GitHub Repository](https://github.com/suseela-ramappa/travelgo)
 ## Screenshots
-
-<img width="1892" height="1038" alt="travelgo-homepage" src="https://github.com/user-attachments/assets/dc1d143d-8c5f-4263-9d91-51cb47da2d23" />
 <img width="1879" height="1038" alt="homepage" src="https://github.com/user-attachments/assets/8e5fcbaf-3e8f-4f8a-9b44-352c5efe4c71" />
+<img width="1892" height="1038" alt="travelgo-homepage" src="https://github.com/user-attachments/assets/dc1d143d-8c5f-4263-9d91-51cb47da2d23" />
+
 <img width="1907" height="1043" alt="travelgo-registerpage" src="https://github.com/user-attachments/assets/64bc8e5d-677c-4277-a379-5c445de01cbb" />
 <img width="1891" height="1037" alt="travelgo-userlogin" src="https://github.com/user-attachments/assets/62ca7c93-3fdf-468a-8b22-090421782932" />
 
